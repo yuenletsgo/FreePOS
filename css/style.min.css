@@ -278,6 +278,7 @@ summary {
   border: 1px solid #FF6663;
   border-radius: 20px;
   color: #FF6663;
+  transition: 300ms ease;
 }
 .btn-red:hover {
   color: #17A6E8;
@@ -422,6 +423,7 @@ nav .wrap .btn-1 {
   display: block;
   width: 210px;
   margin-top: -35px;
+  transition: 400ms ease;
 }
 @media (max-width: 768px) {
   nav .wrap .btn-1 {
@@ -430,12 +432,14 @@ nav .wrap .btn-1 {
 }
 nav .wrap .btn-1 .static {
   z-index: 99;
+  transition: 300ms ease;
 }
 nav .wrap .btn-1 img {
   position: absolute;
 }
 nav .wrap .btn-1:hover .static {
   opacity: 0;
+  transition: 300ms ease;
 }
 @media (max-width: 624px) {
   nav .wrap .btn-1 {
@@ -444,6 +448,7 @@ nav .wrap .btn-1:hover .static {
 }
 nav .btn-2 {
   display: none;
+  transition: 300ms ease;
 }
 @media (max-width: 624px) {
   nav .btn-2 {
@@ -1002,6 +1007,7 @@ nav .btn-2 {
 .s-4 .btn-red {
   margin-top: 45px;
   position: relative;
+  transition: 200ms ease;
 }
 @media (max-width: 624px) {
   .s-4 .btn-red {
@@ -1014,10 +1020,11 @@ nav .btn-2 {
   color: #17A6E8;
   position: absolute;
   background: white;
-  display: none;
+  opacity: 0;
+  transition: 200ms ease;
 }
 .s-4 .btn-red:hover::before {
-  display: block;
+  opacity: 100;
 }
 
 .s-5 {
@@ -1113,9 +1120,13 @@ footer .to-top {
   cursor: pointer;
   font-size: 12px;
   color: white;
+  transition: 400ms ease;
 }
 footer .to-top img {
   margin-bottom: 12px;
+}
+footer .to-top:hover {
+  transform: translateY(-10px);
 }
 footer .footer-title {
   font-size: 48px;
@@ -1155,7 +1166,7 @@ footer .footer-title span.phone {
   }
 }
 footer .footer-btn {
-  background: #17A6E8;
+  background: linear-gradient(to right, #17A6E8, #17A6E8);
   text-decoration: none;
   width: 250px;
   height: 40px;
@@ -1166,6 +1177,7 @@ footer .footer-btn {
   border-radius: 20px;
   letter-spacing: 3px;
   margin-bottom: 88px;
+  transition: 500ms ease;
 }
 footer .footer-btn:hover {
   background: linear-gradient(to right, #E88D17, #FF6663);
