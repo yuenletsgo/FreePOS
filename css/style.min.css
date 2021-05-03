@@ -857,12 +857,10 @@ nav .btn-2 {
   }
 }
 .s-3 .left .img-wrap {
-  margin-left: -30px;
   margin-top: 35px;
 }
 @media (max-width: 624px) {
   .s-3 .left .img-wrap {
-    margin-left: 0;
     transform: scale(1.2);
     transform-origin: center;
   }
