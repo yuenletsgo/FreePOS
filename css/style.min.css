@@ -470,7 +470,7 @@ nav .btn-2 {
   background-position: center center;
   background-origin: content-box;
 }
-@media (min-width: 3840px) {
+@media (min-width: 1920px) {
   .banner {
     background-position: bottom center;
     background-size: cover;
@@ -1004,7 +1004,7 @@ nav .btn-2 {
 }
 @media (max-width: 624px) and (max-width: 768px) {
   .s-4 .box-wrapper .wrap img {
-    transform: scale(1.08);
+    transform: scaleY(1.1);
     transform-origin: center center;
   }
 }
@@ -1036,13 +1036,13 @@ nav .btn-2 {
   flex-direction: column;
   align-items: center;
   background: #EFF9FD;
+  text-align: center;
   margin-top: 150px;
   padding: 72px;
 }
 @media (max-width: 624px) {
   .s-5 {
     margin-top: 100px;
-    text-align: center;
   }
 }
 .s-5 ul {
