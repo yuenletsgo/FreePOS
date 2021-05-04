@@ -982,6 +982,8 @@ nav .btn-2 {
   display: flex;
   justify-content: center;
   align-items: center;
+  background: white;
+  z-index: 1;
 }
 .s-4 .box-wrapper .wrap .box.span {
   display: flex;
@@ -1004,8 +1006,9 @@ nav .btn-2 {
 }
 @media (max-width: 624px) and (max-width: 768px) {
   .s-4 .box-wrapper .wrap img {
-    transform: scaleY(1.1);
+    transform: scaleY(1.2);
     transform-origin: center center;
+    z-index: -1;
   }
 }
 .s-4 .btn-red {
