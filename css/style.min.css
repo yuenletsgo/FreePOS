@@ -379,7 +379,6 @@ textarea:invalid {
 
 body, html {
   width: 100vw;
-  max-width: 1920px;
   margin: auto;
   overflow: hidden;
   overflow-y: scroll;
@@ -396,7 +395,6 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1920px;
   margin: auto;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.1);
 }
@@ -471,6 +469,12 @@ nav .btn-2 {
   background-repeat: no-repeat;
   background-position: center center;
   background-origin: content-box;
+}
+@media (min-width: 3840px) {
+  .banner {
+    background-position: bottom center;
+    background-size: cover;
+  }
 }
 .banner img {
   -o-object-fit: cover;
@@ -725,8 +729,8 @@ nav .btn-2 {
 }
 @media (max-width: 768px) {
   .s-1 .right::after {
-    width: 100vw;
-    transform: translate(25%, -50%) scale(0.8);
+    width: unset;
+    transform: translate(50%, -50%) scale(0.8);
   }
 }
 .s-1 .right img {
@@ -892,8 +896,7 @@ nav .btn-2 {
     position: absolute;
     top: 50%;
     right: 50%;
-    width: 100vw;
-    transform: translate(28%, -50%) scale(0.5);
+    transform: translate(50%, -50%) scale(0.5);
     transform-origin: center center;
     z-index: -3;
   }
@@ -950,11 +953,6 @@ nav .btn-2 {
   text-align: center;
   line-height: 1.5rem;
 }
-@media (max-width: 624px) {
-  .s-4 p {
-    text-align: justify;
-  }
-}
 .s-4 .box-wrapper {
   display: flex;
   justify-content: space-between;
@@ -1004,6 +1002,12 @@ nav .btn-2 {
     padding: 0 0.5rem;
   }
 }
+@media (max-width: 624px) and (max-width: 768px) {
+  .s-4 .box-wrapper .wrap img {
+    transform: scale(1.08);
+    transform-origin: center center;
+  }
+}
 .s-4 .btn-red {
   margin-top: 45px;
   position: relative;
@@ -1038,6 +1042,7 @@ nav .btn-2 {
 @media (max-width: 624px) {
   .s-5 {
     margin-top: 100px;
+    text-align: center;
   }
 }
 .s-5 ul {
@@ -1055,7 +1060,6 @@ nav .btn-2 {
 
 .s-6 {
   margin-top: 136px;
-  max-width: 1024px;
 }
 .s-6 .wrap {
   width: 30%;
